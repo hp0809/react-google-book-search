@@ -12,6 +12,7 @@ export default class BooksList extends Component {
               <div className="card-body">
                 <h5 className="card-title">{item.title}</h5>
                 <p className="card-text"><b>Author:</b> {item.authors}</p>
+                <a href={item.link} target="_blank" className="btn btn-primary">See this Book</a>
                 <p>{item.description}</p>
               </div>
             </div>

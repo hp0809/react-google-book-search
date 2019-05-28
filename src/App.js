@@ -1,10 +1,14 @@
 import React, { Component } from "react";
 import BooksList from "./composition/BookList";
+
+
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       query: "",
+      printType: 'All',
+      bookType: 'No filter',
       items: [],
       error: ""
     };
